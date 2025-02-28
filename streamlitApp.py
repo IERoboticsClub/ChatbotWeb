@@ -1,5 +1,8 @@
 import streamlit as st
 
+st.title("AI-Powered Healthcare Chatbot")
+st.write("Ask any medical related question, our AI doctor is here to help!")
+
 if "messages" not in st.session_state:  
     st.session_state.messages = []  
 
