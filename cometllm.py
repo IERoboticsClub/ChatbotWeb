@@ -14,7 +14,7 @@ comet_llm.init(
     project="Doc_bot_openai"
 )
 
-client = OpenAI(api_key="OPENAI_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_KEY"))
 
 advice_list = '''
 # Medical Advice List
