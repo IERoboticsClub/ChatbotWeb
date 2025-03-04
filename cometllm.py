@@ -5,7 +5,7 @@ import comet_llm
 from openai import OpenAI
 from dotenv import load_dotenv
 
-load dotenv
+load dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_KEY")
 COMET_API_KEY = os.getenv("COMET_API_KEY")
 
