@@ -3,18 +3,22 @@ import time
 import streamlit as st
 import comet_llm
 from openai import OpenAI
+from dotenv import load_dotenv
 
-#used the medical chatbot AI advice list from an article on Medium, CometML and OpenAI (turbo-3.5) APIs but I keep getting 429 error code
+load dotenv
+OPENAI_API_KEY = os.getenv("OPENAI_KEY")
+COMET_API_KEY = os.getenv("COMET_API_KEY")
+
+#used the medical chatbot AI advice list from an article on Medium, CometML and OpenAI (turbo-3.5) APIs
 
 st.title("AI-Powered Healthcare Chatbot")
 st.write("Ask any medical question, our AI doctor is here to help!")
 
-comet_llm.init(
-    api_key=os.getenv("API_KEY"),  
-    project="Doc_bot_openai"
-)
+# Initialize CometML
+comet_llm.init(api_key=COMET_API_KEY, project="Doc_bot_openai")
 
-client = OpenAI(api_key=os.getenv("OPENAI_KEY"))
+# Initialize OpenAI Client
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 advice_list = '''
 # Medical Advice List
