@@ -1,3 +1,5 @@
 # ChatbotWeb
 
-This project is a Web-based Chatbot app. For detailed milestones and steps, please refer to the [issues page](https://github.com/IERoboticsClub/ChatbotWeb/issues).
+This project is a Web-based Chatbot app that gives medical advice and suggest remedies.
+
+It is built with Streamlit Python and connected to Comet and OpenAI's turbo-3.5 APIs.
