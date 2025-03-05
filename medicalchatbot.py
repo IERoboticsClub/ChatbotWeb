@@ -5,7 +5,7 @@ import comet_llm
 from openai import OpenAI
 from dotenv import load_dotenv
 
-load dotenv()
+load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_KEY")
 COMET_API_KEY = os.getenv("COMET_API_KEY")
 
@@ -68,8 +68,6 @@ if user_input:
     st.session_state.messages.append({"role": "user", "content": user_input})
     context_doctor.append({'role': 'user', 'content': user_input})
 
-    st.rerun()
-
     start_time = time.time()
     
     chat_completion = client.chat.completions.create(
@@ -80,7 +78,13 @@ if user_input:
     duration = time.time() - start_time
 
     with st.spinner("DoctorBot is thinking... 🤔"):
-        response = get_openai_response(context_doctor)
+        start_time = time.time()
+        chat_completion = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=context_doctor
+    )
+    response = chat_completion.choices[0].message.content
+    duration = time.time() - start_time
 
 
     comet_llm.log_prompt(
