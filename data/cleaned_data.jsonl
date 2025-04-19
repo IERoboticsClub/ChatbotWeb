@@ -1,0 +1,13 @@
+//prompts for breast cancer
+{"prompt": "What is breast cancer?", "completion": "Breast cancer is a disease in which malignant (cancer) cells form in the tissues of the breast. Signs of breast cancer include lumps or changes in the breast. Breast cancer is sometimes caused by inherited gene mutations, hence a family history of breast cancer increase the risk of it."}
+{"prompt": "Who is at risk from breast cancer?", "completion": "Those who have a family history of breast cancer have an increased risk. According to a study conducted in Sweden on mother-daughter and sisters pairs, the breast cancer prognosis of a woman predicts the survival in her first-degree relatives with breast cancer. Other risk factors include: a personal history of benign (noncancer) breast disease, inherited changes in BRCA1 or BRCA2 genes, as well as exposure of breast tissue to estrogen"}
+{"prompt": "Is breast cancer inherited?", "completion": "Breast cancer is sometimes caused by inherited gene mutations (like BRCA1, BRCA2). The genes in cells carry the hereditary information that is received from a persons parents. Hereditary cancers make up around 5% to 10% of all breast cancers. Some gene mutations like BRCA1 and BRCA2 are related to an increased risk in other cancers too, like ovarian cancer. Some gene mutations are more common in certain ethnic groups. There are test that can be done to detect mutated genes."}
+{"prompt": "How to prevent breast cancer?", "completion": "The use of certain medicines and other factors decrease the risk of breast cancer. Protective factors (which decrease the risk of cancer) include: taking estrogen-only hormone therapy after a hysterectomy, selective estrogen receptor modulators, aromatase inhibitors, less exposure of breast tissue to estrogen made by the body, having a mastectomy oophorectomy and ovarian ablation."}
+{"prompt": }
+{"prompt": }
+{"prompt": }
+{"prompt": }
+{"prompt": }
+{"prompt": }
+//prompts for prostate cancer
+//prompts for brain tumors
